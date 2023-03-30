@@ -1,0 +1,252 @@
+/* -----NULL------------------------------------------------------------ */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 62.5%;
+  }
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+body {
+    height: 100%;
+    line-height: 1;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    color: #000;
+}
+
+/* ----CONTAINER-------------------------------------------------------- */
+
+._container {
+  max-width: 125.6rem;
+  margin: 0 auto;
+}
+
+/* ----INFO------------------------------------------------------------- */
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3.5rem 6.4rem;
+    margin-bottom: 8rem;
+  }
+
+/* ----PROJECTS--------------------------------------------------------- */
+
+.projects {
+  background-color: #131313;
+}
+
+.projects__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 9rem;
+  padding-bottom: 20rem;
+}
+
+/* ----LEFT-WRAPPER----------------------------------------------------- */
+
+.left-wrapper {
+  max-width: 40%;
+  margin-left: 4.5rem;
+  margin-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.left-wrapper__title {
+  font-size: 2.7rem;
+  color: #E3B873;
+  line-height: 138%;
+  letter-spacing: -7%;
+  font-family: "Yeseva One";
+  margin-bottom: 3.4rem;
+  text-transform: uppercase;
+}
+
+.left-wrapper__text {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 191%;
+  margin-bottom: 4.2rem;
+}
+
+.info__title {
+  font-size: 1.8rem;
+  color: #E3B873;
+  line-height: 138%;
+  text-transform: uppercase;
+  font-family: "YesevaOne";
+}
+
+.info__text {
+  font-size: 1.3rem;
+  line-height: 163%;
+  color: #fff;
+}
+
+.grid-3 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+  }
+  
+  .slider__circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-right: 3rem;
+    cursor: pointer;
+  }
+  
+  .slider__next {
+    margin-right: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .slider__next:last-child {
+    margin-right: 0;
+  }
+  
+  .slider__prev {
+    margin-right: 3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .slider__prev:last-child {
+    margin-right: 0;
+  }
+
+/* --RIGHT-WRAPPER----------------------------------------------------- */
+
+.right-wrapper {
+  max-width: 60%;
+}
+
+.right-wrapper__link {
+  margin-bottom: 4.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right-wrapper__item {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.4rem;
+  font-family: "YesevaOne";
+  line-height: 138%;
+  text-transform: uppercase;
+  margin-right: 6rem;
+}
+
+.right-wrapper__item:last-child {
+  margin-right: 0;
+}
+
+.right-wrapper__item:hover {
+  color: #E3B873;
+  transition: 0.5s;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.right-wrapper__img {
+  display: flex;
+  width: 90%;
+  overflow: hidden;
+}
+
+.right-wrapper__work {
+  width: 100%;
+  height: auto;
+}
+
+.right-wrapper__tap-left {
+  display: none;
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: #E3B873;
+  border-radius: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-wrapper__tap-left-img {
+  width: 0.6rem;
+  height: 1rem;
+}
+
+.right-wrapper__tap-right {
+  display: none;
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: #E3B873;
+  border-radius: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-wrapper__tap-right-img {
+  width: 0.6rem;
+  height: 1rem;
+}
+
+.right-wrapper__btn {
+  margin-right: 6rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.right-wrapper__btn:last-child {
+  margin-right: 0;
+}
+
+.slider-line {
+  display: flex;
+  position: relative;
+  left: 0;
+}
+
+/* --FOR-DOTS----------------------------------------------------- */
+
+.active {
+  background: white;
+}
+.active:hover {
+  background: white;
+}
+.active:active {
+  background: white;
+}
